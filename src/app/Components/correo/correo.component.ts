@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CorreoComponent implements OnInit {
 
-  constructor() { }
+  correo: any;
+
+  constructor() { 
+    this.correo ={
+      Titulo: "Titulo del mail",
+      cuerpo: "Cuerpo del mail",
+      emisor: "emisor",
+      destinatario: "destinatario" 
+    }
+  }
 
   ngOnInit() {
   }

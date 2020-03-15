@@ -9,20 +9,9 @@ import { AppComponent } from './app.component';
 
 // Components
 import { CorreoComponent } from './Components/correo/correo.component';
-import { ListaCorreosComponent } from './Components/lista-correos/lista-correos.component';
-import { NuevoCorreoComponent } from './Components/nuevo-correo/nuevo-correo.component';
-//import { AvisosComponent } from './Components/avisos/avisos.component';
-import { LoginComponent } from './Components/login/login.component';
-
-// View and Menu
-import { MenuComponent } from './Menu/menu/menu.component';
-import { HomeComponent } from './Views/home/home.component';
-import { EnviarComponent } from './Views/enviar/enviar.component';
-import { VisualizarCorreoComponent } from './Views/visualizar-correo/visualizar-correo.component';
-import { CorreosRecibidosComponent } from './Views/correos-recibidos/correos-recibidos.component';
 
 // Modules
-import { MaterialModule } from './Modules/material/material.module';
+//import { MaterialModule } from './Modules/material/material.module';
 
 // External Libs
 import {
@@ -48,28 +37,11 @@ let gapiClientConfig: NgGapiClientConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    CorreoComponent,
-    ListaCorreosComponent,
-    NuevoCorreoComponent,
-    // AvisosComponent,
-    CorreosRecibidosComponent,
-    LoginComponent,
-    MenuComponent,
-    HomeComponent,
-    EnviarComponent,
-    VisualizarCorreoComponent
+    CorreoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    GoogleApiModule.forRoot({
-      provide: NG_GAPI_CONFIG,
-      useValue: gapiClientConfig
-    }),
-    MaterialModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
