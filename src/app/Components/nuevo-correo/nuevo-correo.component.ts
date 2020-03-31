@@ -1,6 +1,6 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { EventEmitter } from 'protractor';
+
 
 @Component({
   selector: 'app-nuevo-correo',
@@ -12,7 +12,7 @@ export class NuevoCorreoComponent implements OnInit {
   nuevoCorreo: FormGroup;
   submitted = false;
   @Input() correo: any;
-  @Output()  acccionRealizada: EventEmitter<any> = new EventEmitter();
+  @Output() acccionRealizada: EventEmitter<any> = new EventEmitter();
 
   constructor(private formBuilder: FormBuilder) { }
 
